@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import Header from './components/Header'
+import Main from './components/Main'
 
 class App extends Component {
-  state = {
-    loaded: false
-  };
   render() {
-    if (!this.state.loaded) return <div>Loading...</div>;
     return (
       <div>
-        <h1>GAS Basic React Template</h1>
+        <Header title="GAS Basic React" />
+        <Main />
       </div>
     );
   }
